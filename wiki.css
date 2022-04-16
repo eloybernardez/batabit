@@ -49,7 +49,7 @@ header img {
   align-self: center;
 }
 
-.header--title-container {
+.header__title-container {
   width: 90%;
   min-width: 28.8rem;
   max-width: 90rem;
@@ -59,14 +59,14 @@ header img {
   align-self: center;
 }
 
-.header--title-container h1 {
+.header__title-container h1 {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
 }
 
-.header--title-container p {
+.header__title-container p {
   margin-top: 2.5rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -74,7 +74,7 @@ header img {
   color: var(--soft-orange);
 }
 
-.header--title-container .header--button {
+.header__title-container .header__button {
   position: absolute;
   left: calc(50% - 114.5px);
   top: 270px;
@@ -94,7 +94,7 @@ header img {
   color: var(--black);
 }
 
-.header--button span {
+.header__button span {
   display: inline-block;
   width: 13px;
   height: 8px;
@@ -104,7 +104,7 @@ header img {
 
 /* --------------Exchange Section--------------- */
 /* Eloy's way */
-.main--exchange {
+.main__exchange {
   display: flex;
   position: relative;
   flex-flow: column wrap;
@@ -113,12 +113,12 @@ header img {
   background-color: var(--off-white);
 }
 
-.main--exchange .main-logo {
+.main__exchange .main-logo {
   padding-top: 50px;
   padding-bottom: 25px;
 }
 
-.main--exchange .main--exchange--title {
+.main__exchange .main__exchange--title {
   color: var(--black);
   font-size: 2.4rem;
   font-weight: 700;
@@ -131,35 +131,47 @@ header img {
   margin-top: 15px;
 }
 
-.main--exchange p {
+.main__exchange p {
   color: var(--warm-black);
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
 
-.main--exchange .main--exchange--subtitle {
+.main__exchange .main__exchange--subtitle {
   margin-bottom: 40px;
   min-width: 288px;
   font-weight: 500;
   color: #757575;
 }
 
-.main--exchange--cripto-container,
-.main--commissions--cripto-container {
+.main__exchange__container {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin-bottom: 20px;
+}
+
+.main__exchange__container--cripto-container,
+.main__commissions__container--cripto-container {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   min-width: 235px;
+  scroll-snap-align: center;
+  margin: 0 30px;
 }
 
-.main--exchange--cripto-container h3 {
+.main__exchange__container--cripto-container h3 {
   font-size: 1.8rem;
   align-self: flex-start;
   padding-bottom: 10px;
   color: var(--bitcoin-orange);
 }
 
-.main--commissions--cripto-container h3 {
+.main__commissions__container--cripto-container h3 {
   font-size: 1.8rem;
   align-self: flex-start;
   padding-bottom: 10px;
@@ -214,7 +226,7 @@ header img {
   font-weight: 400;
 }
 
-.main--exchange--cripto-container span {
+.main__exchange__container--cripto-container span {
   background-image: url("/assets/icons/right-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -226,7 +238,7 @@ header img {
   top: 55.5%;
 }
 
-.main--commissions--cripto-container span {
+.main__commissions__container--cripto-container span {
   background-image: url("/assets/icons/right-arrow.svg");
   transform: rotateY(180deg);
   background-position: center;
@@ -239,7 +251,7 @@ header img {
   top: 83.5%;
 }
 
-.main--exchange .update-currency-tab {
+.main__exchange .update-currency-tab {
   background-color: var(--soft-orange);
   font-family: "Inter", sans-serif;
   border-radius: 8px;
@@ -251,7 +263,7 @@ header img {
   max-width: 300px;
 }
 
-.main--exchange .update-commissions-tab {
+.main__exchange .update-commissions-tab {
   background-color: var(--soft-blue);
   font-family: "Inter", sans-serif;
   border-radius: 8px;
@@ -263,13 +275,13 @@ header img {
   max-width: 300px;
 }
 
-.main--exchange .update-commissions-tab p,
-.main--exchange .update-currency-tab p {
+.main__exchange .update-commissions-tab p,
+.main__exchange .update-currency-tab p {
   font-size: 1.2rem;
 }
 
-.main--exchange .update-currency-tab p span,
-.main--exchange .update-commissions-tab p span {
+.main__exchange .update-currency-tab p span,
+.main__exchange .update-commissions-tab p span {
   font-weight: 700;
 }
 
@@ -291,7 +303,7 @@ header img {
   padding-bottom: 50px;
 }
 
-.main__chars__title {
+.main__chars--title {
   width: 90%;
   min-width: 288px;
   height: auto;
@@ -302,7 +314,7 @@ header img {
   color: var(--just-white);
 }
 
-.main__chars__subtitle {
+.main__chars--subtitle {
   width: 70%;
   min-width: 288px;
   font-size: 1.4rem;
@@ -312,7 +324,7 @@ header img {
   color: #808080;
 }
 
-.main__chars__container {
+.main__chars__description--container {
   background-color: var(--black);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -324,18 +336,18 @@ header img {
   padding: 15px;
 }
 
-.main__chars__container:last-child {
+.main__chars__description--container:last-child {
   margin-bottom: 0;
 }
 
-.main__chars__container h4 {
+.main__chars__description--container h4 {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--just-white);
   margin-top: 8px;
 }
 
-.main__chars__container p {
+.main__chars__description--container p {
   margin: 11px 0;
   font-size: 1.4rem;
   font-weight: 500;
@@ -388,12 +400,11 @@ header img {
   color: #757575;
 }
 
-.main__prices--cards-container {
+.main__prices__cards-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  overflow-x: auto;
   min-height: 300px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -412,11 +423,11 @@ header img {
   background-color: var(--just-white);
 }
 
-.main__prices--cards-container::-webkit-scrollbar {
+.main__prices__cards-container::-webkit-scrollbar {
   background-color: var(--soft-orange);
   height: 3px;
 }
-.main__prices--cards-container::-webkit-scrollbar-thumb {
+.main__prices__cards-container::-webkit-scrollbar-thumb {
   background-color: var(--bitcoin-orange);
 }
 
@@ -424,7 +435,7 @@ header img {
   order: 2;
 }
 
-.main__prices--cards-container .middle h4 {
+.main__prices__cards-container .middle h4 {
   margin-top: -7px;
 }
 
@@ -436,7 +447,7 @@ header img {
   order: 3;
 }
 
-.card .card__best-choice {
+.card .card__best--choice {
   font-family: "Inter", sans-serif;
   padding: 8px;
   margin: 0 auto;
@@ -503,7 +514,7 @@ header img {
   font-weight: 700;
 }
 
-.card__button .card__button-arrow {
+.card__button .card__button--arrow {
   width: 14px;
   min-height: 20px;
   background-image: url("./assets/icons/orange-right-arrow.svg");
@@ -534,7 +545,6 @@ header img {
 
 .footer .footer__logo span {
   display: block;
-  /* margin: 5px auto; */
   width: 64px;
   height: 50px;
   background-image: url("./assets/img/logo-footer.svg");

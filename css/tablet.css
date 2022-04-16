@@ -1,17 +1,24 @@
-.main--exchange__container {
+.main__exchange__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 90%;
 }
 
-.main__chars .main__chars__container {
+.main__chars .main__chars__description--container {
   margin: 20px auto;
 }
 
 .main__chars .main__chars__description {
   display: flex;
   flex-wrap: wrap;
-  width: 930px;
+  min-width: 930px;
   justify-content: center;
+}
+
+.main__prices__cards-container::-webkit-scrollbar {
+  display: none;
+}
+.main__prices__cards-container::-webkit-scrollbar-thumb {
+  display: none;
 }
