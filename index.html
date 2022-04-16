@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="wiki.css" />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width:930px)"
+    />
   </head>
   <body>
     <header>
@@ -22,7 +27,7 @@
           Batatabit te ayuda a navegar entre los diferentes precios y
           tendencias.
         </p>
-        <a href="#" class="header--button"
+        <a href="#cta" class="header--button"
           >Conoce Nuestros Planes <span></span
         ></a>
       </div>
@@ -44,91 +49,93 @@
           monedas más importantes del mundo.
         </p>
 
-        <div class="main--exchange--cripto-container">
-          <h3>Monedas</h3>
-          <span></span>
-          <ul class="cripto-list">
-            <li><p>Bitcoin</p></li>
-            <li>
-              <div>
-                <p>$1.96</p>
-                <img
-                  src="./assets/icons/trending-down.svg"
-                  alt="trending down icon"
-                />
-              </div>
-            </li>
-            <li><p>Ethereum</p></li>
-            <li>
-              <div>
-                <p>$0.07</p>
-                <img
-                  src="./assets/icons/trending-up.svg"
-                  alt="trending up icon"
-                />
-              </div>
-            </li>
-            <li><p>Ripple</p></li>
-            <li>
-              <div>
-                <p>$2.15</p>
-                <img
-                  src="./assets/icons/trending-down.svg"
-                  alt="trending down icon"
-                />
-              </div>
-            </li>
-            <li><p>Stellar</p></li>
-            <li>
-              <div>
-                <p>$4.96</p>
-                <img
-                  src="./assets/icons/trending-down.svg"
-                  alt="trending down icon"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
+        <section class="main--exchange__container">
+          <div class="main--exchange--cripto-container">
+            <h3>Monedas</h3>
+            <!-- <span></span> -->
+            <ul class="cripto-list">
+              <li><p>Bitcoin</p></li>
+              <li>
+                <div>
+                  <p>$1.96</p>
+                  <img
+                    src="./assets/icons/trending-down.svg"
+                    alt="trending down icon"
+                  />
+                </div>
+              </li>
+              <li><p>Ethereum</p></li>
+              <li>
+                <div>
+                  <p>$0.07</p>
+                  <img
+                    src="./assets/icons/trending-up.svg"
+                    alt="trending up icon"
+                  />
+                </div>
+              </li>
+              <li><p>Ripple</p></li>
+              <li>
+                <div>
+                  <p>$2.15</p>
+                  <img
+                    src="./assets/icons/trending-down.svg"
+                    alt="trending down icon"
+                  />
+                </div>
+              </li>
+              <li><p>Stellar</p></li>
+              <li>
+                <div>
+                  <p>$4.96</p>
+                  <img
+                    src="./assets/icons/trending-down.svg"
+                    alt="trending down icon"
+                  />
+                </div>
+              </li>
+            </ul>
 
-        <div class="update-currency-tab">
-          <p><span>Actualizado:</span> 19 Julio 23:45</p>
-        </div>
+            <div class="update-currency-tab">
+              <p><b>Actualizado:</b> 19 Julio 23:45</p>
+            </div>
+          </div>
 
-        <div class="main--commissions--cripto-container">
-          <h3>Comisiones</h3>
-          <span></span>
-          <ul class="cripto-list">
-            <li><p>Bitrade</p></li>
-            <li>
-              <div>
-                <p>$12.96</p>
-              </div>
-            </li>
-            <li><p>Bitpreco</p></li>
-            <li>
-              <div>
-                <p>$13.07</p>
-              </div>
-            </li>
-            <li><p>Novadax</p></li>
-            <li>
-              <div>
-                <p>$13.15</p>
-              </div>
-            </li>
-            <li><p>Coinext</p></li>
-            <li>
-              <div>
-                <p>$14.96</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+          <div class="main--commissions--cripto-container">
+            <h3>Comisiones</h3>
+            <!-- <span></span> -->
+            <ul class="cripto-list">
+              <li><p>Bitrade</p></li>
+              <li>
+                <div>
+                  <p>$12.96</p>
+                </div>
+              </li>
+              <li><p>Bitpreco</p></li>
+              <li>
+                <div>
+                  <p>$13.07</p>
+                </div>
+              </li>
+              <li><p>Novadax</p></li>
+              <li>
+                <div>
+                  <p>$13.15</p>
+                </div>
+              </li>
+              <li><p>Coinext</p></li>
+              <li>
+                <div>
+                  <p>$14.96</p>
+                </div>
+              </li>
+            </ul>
 
-        <div class="update-commissions-tab">
-          <p><span>Actualizado:</span> 19 Julio 23:45</p>
-        </div>
+            <div class="update-commissions-tab">
+              <p><b>Actualizado:</b> 19 Julio 23:45</p>
+            </div>
+          </div>
+        </section>
       </section>
 
       <section class="main__chars">
@@ -142,45 +149,50 @@
           Confiable y diseñado para su uso diario.
         </p>
 
-        <article class="main__chars__container">
-          <img src="./assets/icons/clock.svg" alt="clock icon" />
-          <h4>Tiempo real</h4>
-          <p>
-            Nuestro API toma información minuto a minuto sobre las tasas que más
-            determinan el comportamiento.
-          </p>
-        </article>
-        <article class="main__chars__container">
-          <img src="./assets/icons/eye.svg" alt="eye icon" />
-          <h4>No hay tasas escondidas</h4>
-          <p>
-            Ni en la compra o al momento de exit, Batatabit siempre te muestra
-            el costo real de lo que estás adquiriendo.
-          </p>
-        </article>
-        <article class="main__chars__container">
-          <img src="./assets/icons/dollar-sign.svg" alt="dollar sign icon" />
-          <h4>Compara monedas</h4>
-          <p>
-            No más rumores, con Batatabit sabrás el valor real de cada moneda en
-            el mercado actual.
-          </p>
-        </article>
-        <article class="main__chars__container">
-          <img src="./assets/icons/check-circle.svg" alt="check circle icon" />
-          <h4>Información confiable</h4>
-          <p>
-            Nuestras fuentes están 100% verificadas y continuamos auditando su
-            contenido mientras se actualizan.
-          </p>
-        </article>
+        <section class="main__chars__description">
+          <article class="main__chars__container">
+            <img src="./assets/icons/clock.svg" alt="clock icon" />
+            <h4>Tiempo real</h4>
+            <p>
+              Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.
+            </p>
+          </article>
+          <article class="main__chars__container">
+            <img src="./assets/icons/eye.svg" alt="eye icon" />
+            <h4>No hay tasas escondidas</h4>
+            <p>
+              Ni en la compra o al momento de exit, Batatabit siempre te muestra
+              el costo real de lo que estás adquiriendo.
+            </p>
+          </article>
+          <article class="main__chars__container">
+            <img src="./assets/icons/dollar-sign.svg" alt="dollar sign icon" />
+            <h4>Compara monedas</h4>
+            <p>
+              No más rumores, con Batatabit sabrás el valor real de cada moneda
+              en el mercado actual.
+            </p>
+          </article>
+          <article class="main__chars__container">
+            <img
+              src="./assets/icons/check-circle.svg"
+              alt="check circle icon"
+            />
+            <h4>Información confiable</h4>
+            <p>
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
+            </p>
+          </article>
+        </section>
       </section>
 
       <section class="main__hero">
         <h2 class="main__hero--subtitle">Conocelo hoy</h2>
       </section>
 
-      <section class="main__prices">
+      <section class="main__prices" id="cta">
         <h2 class="main__prices--title">
           Escoge el plan que mejor se ajuste a ti.
         </h2>
