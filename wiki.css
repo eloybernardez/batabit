@@ -107,6 +107,7 @@ header img {
 .main__exchange {
   display: flex;
   position: relative;
+  min-width: 320px;
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
@@ -116,6 +117,8 @@ header img {
 .main__exchange .main-logo {
   padding-top: 50px;
   padding-bottom: 25px;
+  min-width: 195px;
+  min-height: 195px;
 }
 
 .main__exchange .main__exchange--title {
@@ -147,11 +150,14 @@ header img {
 .main__exchange__container {
   display: flex;
   width: 100%;
+  min-width: 300px;
+  min-height: 194px;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  margin-bottom: 20px;
 }
 
 .main__exchange__container--cripto-container,
@@ -161,7 +167,7 @@ header img {
   align-items: center;
   min-width: 235px;
   scroll-snap-align: center;
-  margin: 0 30px;
+  margin: 0 15px;
 }
 
 .main__exchange__container--cripto-container h3 {
@@ -217,7 +223,7 @@ header img {
 }
 
 .cripto-list li p {
-  color: #b5b0ac;
+  color: var(--warm-black);
   padding: 5px;
   font-weight: 500;
 }
@@ -226,29 +232,13 @@ header img {
   font-weight: 400;
 }
 
-.main__exchange__container--cripto-container span {
-  background-image: url("/assets/icons/right-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  left: 91%;
-  top: 55.5%;
+.main__prices__cards-container::-webkit-scrollbar,
+.main__exchange__container--cripto-container::-webkit-scrollbar {
+  visibility: hidden;
 }
-
-.main__commissions__container--cripto-container span {
-  background-image: url("/assets/icons/right-arrow.svg");
-  transform: rotateY(180deg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  right: 91%;
-  top: 83.5%;
+.main__prices__cards-container::-webkit-scrollbar-thumb,
+.main__commissions__container--cripto-container::-webkit-scrollbar-thumb {
+  visibility: hidden;
 }
 
 .main__exchange .update-currency-tab {
@@ -258,7 +248,7 @@ header img {
   padding: 7px;
   margin-top: 15px;
   margin-bottom: 40px;
-  width: 55%;
+  width: 75%;
   min-width: 157px;
   max-width: 300px;
 }
@@ -270,7 +260,7 @@ header img {
   padding: 7px;
   margin-top: 15px;
   margin-bottom: 40px;
-  width: 55%;
+  width: 75%;
   min-width: 157px;
   max-width: 300px;
 }
@@ -351,7 +341,7 @@ header img {
   margin: 11px 0;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #808080;
+  color: var(--grey);
 }
 
 .main__hero {
@@ -421,14 +411,6 @@ header img {
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px #59491e29;
   background-color: var(--just-white);
-}
-
-.main__prices__cards-container::-webkit-scrollbar {
-  background-color: var(--soft-orange);
-  height: 3px;
-}
-.main__prices__cards-container::-webkit-scrollbar-thumb {
-  background-color: var(--bitcoin-orange);
 }
 
 .middle {

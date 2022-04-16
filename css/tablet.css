@@ -15,10 +15,3 @@
   min-width: 930px;
   justify-content: center;
 }
-
-.main__prices__cards-container::-webkit-scrollbar {
-  display: none;
-}
-.main__prices__cards-container::-webkit-scrollbar-thumb {
-  display: none;
-}
