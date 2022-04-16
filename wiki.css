@@ -533,16 +533,11 @@ header img {
 
 .footer .footer__logo span {
   display: block;
-  margin: 5px auto;
-  width: 37px;
-  height: 24px;
-  background-image: url("./assets/icons/batata.svg");
+  /* margin: 5px auto; */
+  width: 64px;
+  height: 50px;
+  background-image: url("./assets/img/logo-footer.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.footer .footer__logo p {
-  font-size: 0.8rem;
-  color: var(--soft-orange);
 }
