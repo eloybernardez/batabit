@@ -1,2 +1,9 @@
-# batabit
-a cripto exchange landing page clone with HTML and CSS (Mobile First)
+# Batatabit
+
+Batatabit is a cypto exchange landing page made with: 
+
+* HTML5
+* CSS3
+* Flexbox
+* Mobile First
+* Responsive Design
